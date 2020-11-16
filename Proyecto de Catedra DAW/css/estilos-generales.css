@@ -1,0 +1,463 @@
+/**********************************************
+
+				Estilos Generales
+
+***********************************************/
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+body{
+	
+	background-image: url(../img/azul2.jpg);
+
+}
+
+
+/*******************************************
+	ANIMACION .arriba BOTON TOP SCROLL
+********************************************/	
+
+
+.contenedor_general{
+	position: relative; 
+	width: 100% !important;
+	min-height: 100% !important;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+header{
+	position: fixed;
+	width: 100%;
+	height: 65px;
+	background: #34495E;
+	background: -ms-linear-gradient(top, #45484d 0%, #000000 100%);
+	background: -o-linear-gradient(top, #45484d 0%, #000000 100%);
+	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
+	background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%);
+	background: linear-gradient(to bottom, #45484d 0%,#000000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
+	-webkit-box-shadow: 2px 27px 33px -18px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 27px 33px -18px rgba(0,0,0,0.75);
+	-o-box-shadow: 2px 27px 33px -18px rgba(0,0,0,0.75);
+	-ms-box-shadow: 2px 27px 33px -18px rgba(0,0,0,0.75);
+	box-shadow: 2px 27px 33px -18px rgba(0,0,0,0.75);
+	z-index: 2;
+	border-bottom: 3px solid #01DFD7;
+	padding-bottom: 0.5em;
+}
+
+h2{
+	text-align: center;
+	font-family: Times New Roman;
+	font-size: 2em;
+	padding: 0.5em;
+	color: white;
+}
+
+.sub-contenedor{
+	margin: 0px auto;
+	padding: 40px 0 20px 0;
+	width: 90% !important;
+	min-height: 100% !important;
+	clear: both;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+
+
+.mapa_SV{
+	width: 100%;
+	min-height: 100%;
+}
+
+.mapa_SV > h1.titulo_principal_mapaSV{
+	padding: 0.4em 0 0.4em 0;
+	background-color: #000;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 2.3em; 
+	text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+	-webkit-text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+	-moz-text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+	-o-text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+	-ms-text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+	-webkit-box-shadow: 2px 27px 33px -18px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 27px 33px -18px rgba(0,0,0,0.75);
+	-o-box-shadow: 2px 27px 33px -18px rgba(0,0,0,0.75);
+	-ms-box-shadow: 2px 27px 33px -18px rgba(0,0,0,0.75);
+	box-shadow: 2px 27px 33px -18px rgba(0,0,0,0.75);
+	border-bottom: 3px solid #B40431;
+}
+
+svg.img_mapaSV{
+	margin: 0px auto;
+	width: 90%;
+	display: block;
+}
+
+p.info_desplegable{
+	padding: 0.7em 0 1em 0;
+	text-align: center;
+	font-size: 1.5em;
+	color: #0040FF;
+}
+
+.contenedor_menu_desplegable{
+	margin: 1em 0 1em 0;
+	width: 100% !important;
+	min-height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.menu_desplegable{
+	margin: 0.7em auto;
+	width: 90% !important;
+	clear: both;
+}
+
+.titulo_menu{
+	position: relative;
+	padding: 2em;
+	font-size: 1.05em;
+	display: block;
+	background: #606c88;
+	background: -ms-linear-gradient(top, #606c88 0%, #3f4c6b 100%);
+	background: -o-linear-gradient(top, #606c88 0%, #3f4c6b 100%);
+	background: -moz-linear-gradient(top, #606c88 0%, #3f4c6b 100%);
+	background: -webkit-linear-gradient(top, #606c88 0%,#3f4c6b 100%);
+	background: linear-gradient(to bottom, #606c88 0%,#3f4c6b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=0 );
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	-o-border-radius: 15px 15px 15px 15px;
+	-ms-border-radius: 15px 15px 15px 15px;
+	border: 5px solid #000000;
+	color: #FFFFFF;
+	text-decoration: none;
+	cursor: pointer;
+	
+}
+
+.titulo_menu.desplegable_abierto{
+	color: #FFFFFF;
+	background: #cedce7;
+	background: -moz-radial-gradient(center, ellipse cover, #cedce7 0%, #596a72 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, #cedce7 0%,#596a72 100%);
+	background: radial-gradient(ellipse at center, #cedce7 0%,#596a72 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=1 );
+}
+
+.titulo_menu:hover{
+	background: #606c88;
+	background: -ms-radial-gradient(center, ellipse cover, #606c88 0%, #3f4c6b 100%);
+	background: -o-radial-gradient(center, ellipse cover, #606c88 0%, #3f4c6b 100%);
+	background: -moz-radial-gradient(center, ellipse cover, #606c88 0%, #3f4c6b 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, #606c88 0%,#3f4c6b 100%);
+	background: radial-gradient(ellipse at center, #606c88 0%,#3f4c6b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=1 );
+
+}
+
+.titulo_menu span.icono_menu:before{
+	content: "+";
+}
+
+.titulo_menu.desplegable_abierto span.icono_menu:before{
+	content: "-";
+}
+
+.contenido_menu_desplegable{
+	display: none;
+}
+
+.contenido_menu_desplegable h3{
+	margin: 1em 0 1em 0;
+	text-align: center;
+	font-size: 2em;
+	text-shadow: 1px 2px 6px rgba(92, 136, 0, 1);
+	-webkit-text-shadow: 1px 2px 6px rgba(92, 136, 0, 1);
+	-moz-text-shadow: 1px 2px 6px rgba(92, 136, 0, 1);
+	-o-text-shadow: 1px 2px 6px rgba(92, 136, 0, 1);
+	-ms-text-shadow: 1px 2px 6px rgba(92, 136, 0, 1);
+}
+
+.contenido_menu_desplegable p{
+	padding: 1em;
+	text-align: justify;
+	font-size: 1.1em;
+}
+
+
+.titulo_menu span.icono_menu{
+	position: absolute;
+	top: 0.7em;
+	right: 1em;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+img.mapa_menu_desplegable{
+	margin: 0px auto;
+	width: 80%;
+	min-height: 100%;
+	display: block;
+}
+
+.contenedor_botones{
+	width: 100%;
+	min-height: 100%;
+	display: inline;
+	clear: both;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+/* Zona occidental menu desplegable */
+.division_departamentos_occidente{
+	margin: 1em 0.2em 1em 0;
+	width: 47.5%;
+	height: 45px;
+	display: inline;
+	float: left;
+	background: #cc0000;
+	background: -ms-linear-gradient(left, #cc0000 0%, #cc0000 100%);
+	background: -o-linear-gradient(left, #cc0000 0%, #cc0000 100%);
+	background: -moz-linear-gradient(left, #cc0000 0%, #cc0000 100%);
+	background: -webkit-linear-gradient(left, #cc0000 0%,#cc0000 100%);
+	background: linear-gradient(to right, #cc0000 0%,#cc0000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#cc0000',GradientType=1 );
+	border: 3px solid #000;
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	-o-border-radius: 15px 15px 15px 15px;
+	-ms-border-radius: 15px 15px 15px 15px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+a.division_departamentos_occidente{
+	padding: 1.4em 0 0.3em 0;
+}
+
+.division_departamentos_occidente:hover{
+	background: #ff3019;
+	background: -ms-radial-gradient(center, ellipse cover, #ff3019 0%, #cf0404 100%);
+	background: -o-radial-gradient(center, ellipse cover, #ff3019 0%, #cf0404 100%);
+	background: -moz-radial-gradient(center, ellipse cover, #ff3019 0%, #cf0404 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, #ff3019 0%,#cf0404 100%);
+	background: radial-gradient(ellipse at center, #ff3019 0%,#cf0404 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=1 );
+}
+
+/* Zona central menu desplegable */
+.division_departamentos_centro{
+	margin: 1em 0.2em 1em 0;
+	width: 48%;
+	height: 45px;
+	display: inline;
+	float: left;
+	background: #cc0000;
+	background: -ms-linear-gradient(left, #cc0000 0%, #cc0000 100%);
+	background: -o-linear-gradient(left, #cc0000 0%, #cc0000 100%);
+	background: -moz-linear-gradient(left, #cc0000 0%, #cc0000 100%);
+	background: -webkit-linear-gradient(left, #cc0000 0%,#cc0000 100%);
+	background: linear-gradient(to right, #cc0000 0%,#cc0000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#cc0000',GradientType=1 );
+	border: 3px solid #000;
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	-o-border-radius: 15px 15px 15px 15px;
+	-ms-border-radius: 15px 15px 15px 15px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+a.division_departamentos_centro{
+	padding: 1.4em 0 0.3em 0;
+}
+
+.division_departamentos_centro:hover{
+	background: #ff3019;
+	background: -ms-radial-gradient(center, ellipse cover, #ff3019 0%, #cf0404 100%);
+	background: -o-radial-gradient(center, ellipse cover, #ff3019 0%, #cf0404 100%);
+	background: -moz-radial-gradient(center, ellipse cover, #ff3019 0%, #cf0404 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, #ff3019 0%,#cf0404 100%);
+	background: radial-gradient(ellipse at center, #ff3019 0%,#cf0404 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=1 );
+}
+
+/* Zona oriental menu desplegable */
+.division_departamentos_oriente{
+	margin: 1em 0.2em 1em 0;
+	width: 48%;
+	height: 45px;
+	display: inline;
+	float: left;
+	background: #cc0000;
+	background: -ms-linear-gradient(left, #cc0000 0%, #cc0000 100%);
+	background: -o-linear-gradient(left, #cc0000 0%, #cc0000 100%);
+	background: -moz-linear-gradient(left, #cc0000 0%, #cc0000 100%);
+	background: -webkit-linear-gradient(left, #cc0000 0%,#cc0000 100%);
+	background: linear-gradient(to right, #cc0000 0%,#cc0000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#cc0000',GradientType=1 );
+	border: 3px solid #000;
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	-o-border-radius: 15px 15px 15px 15px;
+	-ms-border-radius: 15px 15px 15px 15px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+a.division_departamentos_oriente{
+	padding: 1.4em 0 0.3em 0;
+}
+
+.division_departamentos_oriente:hover{
+	background: #ff3019;
+	background: -ms-radial-gradient(center, ellipse cover, #ff3019 0%, #cf0404 100%);
+	background: -o-radial-gradient(center, ellipse cover, #ff3019 0%, #cf0404 100%);
+	background: -moz-radial-gradient(center, ellipse cover, #ff3019 0%, #cf0404 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, #ff3019 0%,#cf0404 100%);
+	background: radial-gradient(ellipse at center, #ff3019 0%,#cf0404 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=1 );
+}
+
+/* Boton universal ~ Numero de departamentos impares */
+.division_departamentos_universal{
+	margin: 1em 0.2em 1em 0;
+	width: 96.50%;
+	height: 45px;
+	display: inline;
+	float: left;
+	background: #cc0000;
+	background: -ms-linear-gradient(left, #cc0000 0%, #cc0000 100%);
+	background: -o-linear-gradient(left, #cc0000 0%, #cc0000 100%);
+	background: -moz-linear-gradient(left, #cc0000 0%, #cc0000 100%);
+	background: -webkit-linear-gradient(left, #cc0000 0%,#cc0000 100%);
+	background: linear-gradient(to right, #cc0000 0%,#cc0000 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#cc0000',GradientType=1 );
+	border: 3px solid #000;
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	-o-border-radius: 15px 15px 15px 15px;
+	-ms-border-radius: 15px 15px 15px 15px;
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.division_departamentos_universal:hover{
+	background: #ff3019;
+	background: -ms-radial-gradient(center, ellipse cover, #ff3019 0%, #cf0404 100%);
+	background: -o-radial-gradient(center, ellipse cover, #ff3019 0%, #cf0404 100%);
+	background: -moz-radial-gradient(center, ellipse cover, #ff3019 0%, #cf0404 100%);
+	background: -webkit-radial-gradient(center, ellipse cover, #ff3019 0%,#cf0404 100%);
+	background: radial-gradient(ellipse at center, #ff3019 0%,#cf0404 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=1 );
+}
+
+a.division_departamentos_universal{
+	padding: 1.4em 0 0.3em 0;
+}
+
+.contenedor_secundario{
+	margin: 0 auto;
+	margin-bottom: -2.2em;
+	padding-bottom: 1.2em;
+	width: 80%;
+	height: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(237,237,237,1)));
+	background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+	-webkit-box-shadow: 0px -1px 24px 6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px -1px 24px 6px rgba(0,0,0,0.75);
+	-o-box-shadow: 0px -1px 24px 6px rgba(0,0,0,0.75);
+	-ms-box-shadow: 0px -1px 24px 6px rgba(0,0,0,0.75);
+	box-shadow: 0px -1px 24px 6px rgba(0,0,0,0.75);
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+}
+
+.contenedor_secundario p{
+	margin: 1.2em 0 1.2em 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.4em;
+    text-align: justify;
+}
+
+
+footer{ 
+	height: 170px;
+	position: relative;
+	width: 100%;
+	background-color: #000000;
+}
+
+.contenedor_footer{
+	margin: 0px auto;
+	width: 90% !important;
+	min-height: 100px;
+	clear: both;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.contenedor_footer p{
+	padding: 0.7em 0 0 0;
+	font-size: 1.6em;
+	color: #cedce7;
+	text-align: center;
+}
+
+.DC{
+	text-emphasis: center;
+}
+
+/*************************
+
+	APARTADO RESPONSIVO
+
+**************************/
+
+/*Reglas Generales*/
+@media (min-width: 200px) and (max-width: 1023px){
+
+	.contenedor_footer p{
+		font-size: 1.3em;
+	}
+
+	header > h2{
+		padding-top: 1em;
+		font-size: 1.5em;
+	}
+}

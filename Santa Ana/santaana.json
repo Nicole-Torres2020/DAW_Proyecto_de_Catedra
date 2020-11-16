@@ -1,0 +1,18 @@
+[
+
+    {
+        "Cabecera_Departamental" : "Santa Ana",
+        "Extencion_Territorial" : "2,023 kilómetros cuadrados",
+        "Fiestas_Patronales" : "Del 17 al 26 de julio",
+        "Numero_Habitantes" : " 631,100 habitantes",
+        "Datos_Historicos" : "El Departamento fue creado el 8 de febrero de 1855 durante la presidencia de José María San Martín",
+        "Municipios" : ["Candelaria de la Frontera", "Chalchuapa", "Coatepeque", "El Congo", "El Porvenir", "Masahuat", "Metapan", "San Antonio Pajonal", "San Sebastián Salitrillo", "Santa Ana" , "Santa Rosa Guachipilín", "Santiago de la Frontera","Texistepeque"],
+        "Centros_Turisticos" : "Turicentro Apuzunga , Balneario Apanteos , Turicentro Sihuatehuacan , Parque Acuático Galicia",
+        "Lagos" : "Lago de Güija,Lago de Coatepeque",
+        "Rios" : "Rio Lempa, Río Ostúa(entre Guatemala y El Salvador)",
+        "Volcanes" : "Volcán Ilamatepec , Volcán Izalco , Volcán Cerro Verde",
+        "Cerros" : "Cerro Tecana , Cerro Santa Lucia",
+        "Personajes_Celebres" : "Francisco Antonio Lara (musico y compositor) , Óscar Alberto Quiteño (Jugador de C.D. FAS) , GENERAL.Tomas Regalado (militar y político salvadoreño)"
+    }
+
+]

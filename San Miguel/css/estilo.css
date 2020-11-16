@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+  background-image: url(../img/azul2.jpg);
+  width: 100%;
+  color: white;
+}
+
+.container{
+    margin: 50px;
+    padding: 50px;
+    position: absolute;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: cornsilk;
+}
+
+#derecha img{
+	width: 350px;
+	height: 350px;
+}
+
+#derecha{
+	width: 100%;
+	margin: auto;
+}
+
+#derecha ul{
+	list-style: none;
+	width: 2800px;
+	display: flex;
+	animation: slide 20s infinite alternate;
+}
+
+#derecha ul:hover{
+    animation-play-state: paused;
+	cursor: pointer;
+}
+
+@keyframes slide{
+	0%{margin-left: 0px;}
+	20% {margin-left: 0px;}
+
+	30% {margin-left: -250px;}
+	40% {margin-left: -250px;}
+
+	50% {margin-left: -500px;}
+	60% {margin-left: -500px;}
+
+	70% {margin-left: -750px;}
+	80% {margin-left: -750px;}
+
+	90% {margin-left: -1000px;}
+	100% {margin-left: -1000px;}
+}
